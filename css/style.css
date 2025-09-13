@@ -221,6 +221,11 @@ header {
   border: 2px solid #d9d9d9;
 }
 
+.pill:hover {
+  background-color: #deebff;
+  cursor: pointer;
+}
+
 .pill .fa-money-bill-wave,
 .pill .fa-child {
   width: 22px;
@@ -261,38 +266,49 @@ header .info i {
 
 /****** Hebergements ***********/
 #hebergements {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 65%;
+  padding: 30px;
+  border-radius: 15px;
 }
 
 .hebergement-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.hebergement-cards a {
+  width: 30%;
 }
 
 .hebergement-cards .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* width: 250.33px;
-  height: 207.25px; */
   padding-bottom: 15px;
+  width: 100%;
+  min-height: fit-content;
+  gap: 0.4rem;
 }
 
 .hebergement-cards .card img {
-  width: calc(100% - 5px);
-  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
   border-radius: 20px 20px 0 0;
-  border: 5px solid #fff;
 }
 
 .hebergement-cards .card-content {
   display: flex;
   justify-content: start;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
   padding: 0 15px;
+  flex-grow: 1;
+  min-height: 5rem;
 }
 
 .hebergement-cards .card-txt {
@@ -359,6 +375,53 @@ header .info i {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
+
+/****** Activités  **************/
+
+#activity {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+}
+
+.activity-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.activity-cards a {
+  width: 25%;
+}
+
+.activity-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: fit-content;
+  padding: 0;
+}
+
+.activity-cards .card img {
+  aspect-ratio: 3/4;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.activity-cards .card .card-content {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  padding: 20px 19px;
+  border-radius: 0 0 20px 20px;
+}
+
+.activity-cards .card .card-title {
+  margin: 0;
+}
+
+/******* Footer **********/
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
