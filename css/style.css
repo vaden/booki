@@ -1,6 +1,6 @@
 /****** General ***********/
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   box-sizing: border-box;
 }
@@ -117,7 +117,7 @@ nav ul li {
 
 .nav-link:hover::before,
 .nav-link:focus::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -128,13 +128,12 @@ nav ul li {
   background-color: var(--main-color);
 }
 
-/*******  Header *******/
+/*******  Title and search *******/
 
-header {
+#title-and-search {
   display: flex;
   flex-direction: column;
   gap: 35px;
-  margin-top: 35px;
 }
 
 .title {
@@ -270,13 +269,13 @@ button i.fa-magnifying-glass {
   margin: 0;
 }
 
-header .info {
+.info {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-header .info i {
+.info i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,7 +287,7 @@ header .info i {
   line-height: 1;
 }
 
-header .info .info-text {
+.info .info-text {
   font-size: 16px;
   font-weight: 400;
 }
@@ -319,8 +318,8 @@ header .info .info-text {
 .hebergement-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  align-items: stretch;
+  justify-content: space-between;
+  row-gap: 30px;
 }
 
 .hebergement-cards a {
@@ -353,7 +352,7 @@ header .info .info-text {
   justify-content: start;
   flex-direction: column;
   gap: 8px;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .hebergement-cards .card-txt {
@@ -538,7 +537,7 @@ footer .footer-links li a {
   }
 
   .nav-link:active::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 2px;
@@ -675,7 +674,7 @@ footer .footer-links li a {
   }
 
   .nav-link:active::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 2px;
